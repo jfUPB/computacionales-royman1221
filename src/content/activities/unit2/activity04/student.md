@@ -11,7 +11,7 @@ en Hack Assembler, no hay tipos ni punteros como tal, pero podemos simular un pu
 
 * a estará en una dirección, por ejemplo RAM[16]
 * p estará en otra dirección, digamos RAM[17], y guardará el valor 16 (la dirección de a)
-* 
+  
 Luego, cuando hacemos *p = 20;, primero leemos el valor de p (que es 16), y vamos a esa dirección para escribir el 20.
 
 ´´´asm
