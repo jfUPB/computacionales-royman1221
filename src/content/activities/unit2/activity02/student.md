@@ -16,14 +16,14 @@ En el simulador, puedes ver claramente esta diferencia al observar la dirección
 ¿Cómo se implementa la condición i <= 100?
 La condición i <= 100 se traduce en estas instrucciones:
 
-´´´ 
+``` asm
 @i
 D=M        // D = i
 @100
 D=D-A      // D = i - 100
 @END
 D;JGT      // Si (i - 100) > 0, salta a END
-´´´
+```
 
 
 ste código compara el valor de i con 100 restando 100 - i. Si el resultado es mayor que 0 (D;JGT), significa que i ha superado 100 y el programa debe salir del ciclo (goto END). Si no, el ciclo continúa.
