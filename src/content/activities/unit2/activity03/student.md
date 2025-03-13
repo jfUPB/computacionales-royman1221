@@ -6,7 +6,7 @@ Los dos programas en C++ son equivalentes porque realizan exactamente la misma o
 Versión en ensamblador de la estructura for:
 
 
-´´´ asm
+``` asm
 
 @sum      // sum = 0
 M=0
@@ -36,7 +36,7 @@ M=M+1     // i = i + 1
 @END
 0;JMP     // Bucle infinito para terminar el programa
 
-´´´
+```
 
 Comparación entre el ciclo while y el ciclo for en ensamblador:
 
