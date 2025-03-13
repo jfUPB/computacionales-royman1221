@@ -1,11 +1,11 @@
-´´´cpp
+```cpp
 
 int a = 10;      // a tiene el valor 10
 int* p;          // p es un puntero
 p = &a;          // p guarda la dirección de a
 *p = 20;         // cambia el valor de a (usando p) a 20
 
-´´´
+```
 
 en Hack Assembler, no hay tipos ni punteros como tal, pero podemos simular un puntero al guardar la dirección de una variable en otra ubicación de memoria. Así:
 
@@ -14,7 +14,7 @@ en Hack Assembler, no hay tipos ni punteros como tal, pero podemos simular un pu
   
 Luego, cuando hacemos *p = 20;, primero leemos el valor de p (que es 16), y vamos a esa dirección para escribir el 20.
 
-´´´asm
+```asm
 // int a = 10;
 @10
 D=A
@@ -39,4 +39,4 @@ M=D     // M[16] = 20 (a = 20)
 (END)
 @END
 0;JMP
-´´´
+```
