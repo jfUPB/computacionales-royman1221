@@ -1,4 +1,4 @@
-´´´ asm
+``` asm
 // int a = 10;
 @10
 D=A
@@ -29,4 +29,4 @@ M=D     // b = 10 (guarda el valor en RAM[17])
 (END)
 @END
 0;JMP
-´´´
+```
