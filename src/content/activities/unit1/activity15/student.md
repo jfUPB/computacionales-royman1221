@@ -1,0 +1,5 @@
+1. Lo aprendido en esta unidad, sobre la arquitectura del computador y el lenguaje ensamblador, se relaciona directamente con el desarrollo de videojuegos y aplicaciones interactivas, ya que permite entender cómo funciona el hardware en un nivel profundo. 
+Este conocimiento es clave cuando se busca optimizar el rendimiento de un juego o una animación compleja, especialmente en situaciones donde se manejan muchos recursos al mismo tiempo, como gráficos en alta resolución, físicas en tiempo real o inteligencia artificial avanzada.
+2. Por ejemplo, al diseñar un videojuego que utiliza un motor gráfico complejo, conocer el lenguaje ensamblador puede ayudar a optimizar las rutinas críticas del código, como la detección de colisiones o el renderizado de muchos objetos en pantalla simultáneamente.
+Programar ciertas partes en ensamblador permite aprovechar al máximo la velocidad del procesador, reducir el consumo de memoria y garantizar una alta tasa de frames por segundo (FPS). 
+Esto es fundamental para lograr una experiencia fluida en juegos que exigen mucho rendimiento, como los de realidad virtual o los de mundo abierto con gran cantidad de elementos interactivos.
