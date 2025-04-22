@@ -1,78 +1,18 @@
+
+![m=m](https://github.com/user-attachments/assets/f962226a-4f72-4fc5-8eef-ff59555d990a)
+
+
+
 ``` asm
-
-@0                
-D=A              
-@13               
-M=D              
-
-@1                
-D=A               
-@COUNTER_LOOP    
-0;JMP             
-
-(COUNTER_LOOP)    
-@13              
-D=M              
-@1                
-D=D+A             
-@13             
-M=D              
-
-@2               
-D=A               
-@COUNTER_LOOP2   
-0;JMP            
-
-(COUNTER_LOOP2)   
-@13              
-D=M              
-@2               
-D=D+A             
-@13              
-M=D              
-
-@3                
-D=A               
-@COUNTER_LOOP3    
-0;JMP             
-
-(COUNTER_LOOP3)   
-@13               
-D=M               
-@3                
-D=D+A            
-@13             
-M=D             
-
-@4                
-D=A               
-@COUNTER_LOOP4    
-0;JMP             
-
-(COUNTER_LOOP4)   
-@13               
-D=M               
-@4                
-D=D+A             
-@13               
-M=D               
-
-@5                
-D=A               
-@COUNTER_LOOP5   
-0;JMP           
-
-(COUNTER_LOOP5)   
-@13               
-D=M               
-@5                
-D=D+A             
-@13               
-M=D               
-
-@12               
-D=A               
-@12               
-M=D               
-0;JMP             
+1 M=M+1
+2 D=M
+3 @12
+4 M=D+M
+5 D=M
+6 @15
+7 D=A-D
+8 @15
+9 D;JEQ
+10 @0
+11 0;JMP      
 ```
